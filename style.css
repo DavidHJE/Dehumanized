@@ -1,0 +1,12 @@
+html {
+    background-color: black;
+}
+
+body { 
+    margin: 50px;
+    padding: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: #fff;
+    box-shadow: 1px 1px 40px #AAA;
+}
