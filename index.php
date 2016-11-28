@@ -11,20 +11,16 @@
 
 		<h1>Dehumanized</h1>
 		
-		<ul>
-			<li>Aceuil</li>
-			<li>Synopsie</li>
-			<li>Prensentation de l'équipe</li>
-		</ul>
+		<?php echo menu.php; ?>
+		<div id="Synopsis">
+			<h2>Synopsie:</h2>
+			<p>L'histoire prend place dans un monde où la population a perdu tout sentiments et péchées. Eddy, un geek qui est resté 3 ans dans sa chambre pour terminer skyrim, décide de sortir puis découvre le monde actuel.</p>
+		</div>
 
-		<h2>Acueil</h2>
-		<p>Bonjour et bienvenue sur le site de Dehumanized, un court metrage écrit et réalisé par les MMI2C1 de l'Iut de Lens.</p>
-		<h2>Synopsie:</h2>
-		<p>L'histoire prend place dans un monde où la population a perdu tout sentiments et péchées. Eddy, un geek qui est resté 3 ans dans sa chambre pour terminer skyrim, décide de sortir puis découvre le monde actuel.</p>
-		<h2>Prensentation de l'équipe</h2>
-		<ul>
-			<li>Réalisateur: Antoine et Aurélien</li>
-			<li>...</li>
-		</ul>
+		<div id="Trailer">
+		</div>
+
+		<h2>Trailer:</h2>
+		<?php echo footer.php; ?>
 	</body>
 </html>
