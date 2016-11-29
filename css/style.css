@@ -1,0 +1,65 @@
+.gris {
+    background-color: grey;
+    width: 200px;
+    height: 200px;
+}
+
+/* ####################### */
+/* #### MENU ############# */
+/* ####################### */
+
+body {
+    background-color: grey;
+}
+
+#title {
+    text-align: center;
+    font-size: 5rem;
+}
+.menu {
+    
+    padding: 30px;
+    background-color: #575965;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menu ul {
+    
+    margin: 0 auto;
+    
+}
+ul li {
+    display: inline;
+    padding : 0;
+}
+
+.menu ul a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: 15px;
+    transition: all 0.2s;
+}
+.menu ul a:hover {
+/*    transform: translateY(-10px);*/
+    background-color: #767781;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #575965;
+}
+
+.ici {
+    width: 150px;
+    height: 50px;
+    background-color: #93e2dc;
+    border-radius: 5px;
+    margin: 15px;
+    float: right;
+}
