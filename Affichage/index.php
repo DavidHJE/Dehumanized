@@ -10,5 +10,6 @@
 	<h2>Trailer:</h2>
 </div>
 
+<div class="test"></div>
 		
 <?php require "footer.php"; ?>
