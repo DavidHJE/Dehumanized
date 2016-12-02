@@ -1,10 +1,13 @@
 <div id="menu">
     <ul>
-        <a href="#"><li>Accueil</li></a>
-        <a href="#"><li>Jeu</li></a>
-        <a href="#"><li>Produit dérivé</li></a>
-        <a href="#"><li>L’équipe</li></a>
-        <a href="#"><li>Dossier de presse</li></a>
-        <a href="#"><li>Video</li></a>
+        <a href="#" ><li class="glitch" data-text="Accueil">Accueil</li></a>
+        <a href="#" ><li class="glitch" data-text="Jeu">Jeu</li></a>
+        <a href="#" ><li class="glitch" data-text="Produit dérivé">Produit dérivé</li></a>
+        <a href="#" ><li class="glitch" data-text="L'équipe">L’équipe</li></a>
+        <a href="#" ><li class="glitch" data-text="Dossier de presse">Dossier de presse</li></a>
+        <a href="#" ><li class="glitch" data-text="Vidéo">Vidéo</li></a>
     </ul>
+
+    <button id="go">&raquo; Run</button>
+    <div class="hr hr-anim hr-anim-stop"></div>
 </div>
