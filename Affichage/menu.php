@@ -1,3 +1,4 @@
+<img src="../Image/logo-1.2.png" width="150" height="auto">
 <div id="menu">
     <ul>
         <a href="index.php" ><li class="glitch" data-text="Accueil">Accueil</li></a>
