@@ -1,7 +1,9 @@
 <!--
 <footer>
 	<p>Suivez nous sur les réseaux sociaux !</p>
+	<a href="https://www.facebook.com/DeHumanizedLeFilm/"><img src="../Image/F_icon.svg.png" width="50" height="auto"></a>
 	<p>Broken Screem©Copyright - 2016 Tous droits réservés.</p>
+
 </footer>
 -->
 
