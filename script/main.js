@@ -1,3 +1,6 @@
+var consoleRunning = false;
+
+
 function l ( obj = "Test") {
     console.log(obj)
 }
@@ -24,13 +27,25 @@ $.fn.extend({
         myFunction(self, animSpeed, duration)
 
         return this; // to allow for further chaining.
+    },
+    hasOverflow : function() {
+        var $this = $(this);
+        var $children = $this.find('*');
+        var len = $children.length;
+
+        if (len) {
+            var maxHeight = 0
+            $children.map(function(){
+                maxHeight = Math.max(maxHeight, $(this).outerHeight(true));
+            });
+
+            return maxHeight > $this.height();
+        }
+
+        return false;
     }
 });
 
-
-function setDisplay( obj, option ){
-    obj.css("display", option)
-}
 function arrayMe(string) {
 
     // For all matching elements
@@ -102,6 +117,37 @@ function fadeUp(selector, animSpeed = 45, duration = 1000) {
         myLoop(selector);                      //  Start the loop
     }, duration);
 }
+function showText (target, message, speed, index=0) {   
+    if (index < message.length) {
+        $(target).append(message[index++]);
+        checkOverflow(target);
+        setTimeout(function () {
+            showText(target, message, speed, index);
+        }, speed);
+    }
+}
+function showDelayedText( curDelay, target, message, speed, pause = 250, index=0) {
+
+    delay(function() {
+
+        showText(target, message, speed);        
+
+    }, curDelay);
+    curDelay += message.length * speed + 50;
+    delay(function() {
+
+        $(target).append("<br/>");       
+
+    }, curDelay);
+
+    return curDelay + pause;
+}
+function checkOverflow(targetChild) {
+    var $p = $(targetChild).parent("div");
+    if ( $p.hasOverflow() ) {
+        $p.scrollTop( $p.scrollTop() + 100 );
+    }
+}
 
 function playIntro() {
 
@@ -125,26 +171,59 @@ function playIntro() {
         delay(function() {
             $(".test").css("min-height", "0vh").delay(2000).fadeOut(600);
         }, 12000); //Remonte l'écran
-        var IDinterval = setInterval(function() {
-            $('.test p.underscore').toggleClass('change-letter-1');
-        }, 1000);     //Anime underscore
+
 
     });
 
 }
+function playConsole() {
 
-//$('.test').hides();
+    if ( !consoleRunning ) {
+        consoleRunning = true;
+        $( ".texte" ).empty();
+        var t = ".texte";
+        var speed = 65;
+        var curDelay = 0;
+
+        curDelay = showDelayedText( curDelay, t, "> Hey salut toi !", speed );
+        curDelay = showDelayedText( curDelay, t, "> Je suis le doc.", speed, 800);
+        curDelay = showDelayedText( curDelay, t, "> Ne crois pas ce qui est écrit sur ce site ...", speed, 500 );
+        curDelay = showDelayedText( curDelay, t, "> Ne crois pas ce qui est écrit sur ce site ...", 30, 300 );
+        curDelay = showDelayedText( curDelay, t, "> Ne crois pas ce qui est écrit sur ce site ...", 10, 50 );
+        curDelay = showDelayedText( curDelay, t, "> Ne crois pas ce qui est écrit sur ce site ...", 5, 1 );
+        curDelay = showDelayedText( curDelay, t, "> Ne crois pas ce qui est écrit sur ce site ...", 1, 1 );
+        curDelay = showDelayedText( curDelay, t, "> Ne crois pas ce qui est écrit sur ce site ...", 1, 1 );
+        curDelay = showDelayedText( curDelay, t, "> Ne crois pas ce qui est écrit sur ce site ...", 2, 1 );
+        curDelay = showDelayedText( curDelay, t, "> Ne crois pas ce qui est écrit sur ce site ...", 3, 1 );
+        curDelay = showDelayedText( curDelay, t, "> Ne crois pas ce qui est écrit sur ce site ...", 10, 500 );
+        curDelay = showDelayedText( curDelay, t, "> Ne crois pas ce qui est écrit sur ce site ...", 40, 1000 );
+        curDelay = showDelayedText( curDelay, t, "",0, 0 );
+        curDelay = showDelayedText( curDelay, t, "> Ne crois pas ce qui est écrit sur ce site.", 80);
+        curDelay = showDelayedText( curDelay, t, "> Ils m'ont repéré.", 30, 150);
+        curDelay = showDelayedText( curDelay, t, "> Je dois y aller !", 30);
+        delay( function() {
+            consoleRunning = false;
+        }, curDelay)
+    }
+
+}
 
 $(document).ready(function(){
-    
-    playIntro()
 
-    $( "#go" ).click(function() {
-        $( ".hr" ).toggleClass("hr-anim-stop").toggleClass("hr-anim-start");
+    //    playIntro();
+    $('.test').hide();
+
+    $( ".hr" ).toggleClass("hr-anim-stop").toggleClass("hr-anim-start");
+
+    $( "#rerun" ).click(function() {
+        playConsole();
     });
 
-});
+    var IDinterval = setInterval(function() {
+        $('.underscore').toggleClass('change-letter-1');
+    }, 1000);     //Anime underscore
 
+});
 
 
 

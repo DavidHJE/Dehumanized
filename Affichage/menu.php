@@ -8,6 +8,5 @@
         <a href="#" ><li class="glitch" data-text="Vidéo">Vidéo</li></a>
     </ul>
 
-    <button id="go">&raquo; Run</button>
     <div class="hr hr-anim hr-anim-stop"></div>
 </div>
