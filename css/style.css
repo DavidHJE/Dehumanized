@@ -1,6 +1,6 @@
 
 body {
-    overflow: hidden;
+/*    overflow: hidden;*/
     background: url("../Image/stardust.png") repeat;
 }
 * {
@@ -19,15 +19,20 @@ h2{
 
 .container-fluid {
     padding: 0;
-    height: 2000px;
+    /* height: 800px; */
+    display: flex;
 }
 .row {
     margin: 0;
     height: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 .row > div {
     padding: 0;
     height: 100%;
+    flex-grow: 1;
 }
 
 /* anim */
@@ -36,12 +41,14 @@ h2{
     top: 0;
     display: flex;
     align-items: center;
-    padding-left: 30%;
+    padding: 10px;
     min-height: 100vh;
     width: 100vw;
     color: white;
     background-color: #0e151d;
     content: '';
+    z-index: 2;
+    justify-content: center;
 
     transition: min-height 2s;
     transition-timing-function: ease;
@@ -57,6 +64,7 @@ h2{
 }
 span.underscore {
     display:flex;
+    font-size: 60px;
 }
 .test p span {
     height: 85px;
@@ -71,6 +79,25 @@ span.underscore {
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
 }
+#skip {
+    background-color: #192533;
+    color: white;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 25px;
+}
+
+@media all and (max-width: 1200px) {
+    .test p,
+    .test span{
+        font-size: 42px;
+    }
+}
+
 
 
 /* Main */
@@ -120,18 +147,18 @@ a:visited{
 }
 #menu ul a {
     flex-grow: 1;
+    align-self: center;
 }
 #menu ul li {
     padding: 20px 0;
     color: white;
 }
 #menu ul li:hover{
-	background-color: white;
+    background-color: white;
     color: black;
 }
 #menu ul li img {
-    max-height: 100%;
-    
+    height: 64px;
 }
 
 .glitch {
@@ -248,13 +275,13 @@ a:visited{
 }
 #rerun {
     float: right;
-    background-color: #989898;
+    background-color: #ffffff;
     font-size: 16px;
     padding: 0 5px;
     height: 100%;
     line-height: 25px;
     cursor: pointer;
-    color: white;
+    color: #b9b9b9;
 }
 
 /* Video */
@@ -288,7 +315,7 @@ div:hover > .overlay {
     transition: all 0.5s;
 }
 .overlay#overlay-glitch {
-    background: url("../image/glitch.jpg") no-repeat center;
+    background: url("../image/glitch2.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -299,7 +326,8 @@ div:hover > .overlay {
     padding: 25px;
     color: black;
     background: url("../Image/shl.png");
-    height: 100%;
+    /* height: 100%; */
+    /* overflow: hidden; */
 }
 .wrapper-synopsis p{
     padding: 0 50px;
@@ -309,6 +337,6 @@ div:hover > .overlay {
 .overlay-synopsis {
     text-align: center;
     padding: 25px;
-	color: white;
+    color: white;
     background: url("../Image/stardust.png") repeat;
 }

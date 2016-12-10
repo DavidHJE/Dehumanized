@@ -209,14 +209,22 @@ function playConsole() {
 }
 
 $(document).ready(function(){
-
-    //    playIntro();
-    $('.test').hide();
+    
+    playIntro();
+    //    $('.test').hide();
+    delay(function() {
+        playConsole();  
+    },13000)
 
     $( ".hr" ).toggleClass("hr-anim-stop").toggleClass("hr-anim-start");
 
     $( "#rerun" ).click(function() {
         playConsole();
+    });
+    
+    $( "#skip" ).click(function() {
+        $('.test').hide();
+        playConsole();        
     });
 
     var IDinterval = setInterval(function() {
