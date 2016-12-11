@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 <div id="menu">
     <ul>
         <a href="index.php" ><li><img src="../Image/logo-1.2.png" width="150" height="auto"></li></a>
+=======
+
+<div id="menu">
+    <ul>
+        <a href="index.php"><li><img src="../Image/logo-1.2.png"></li></a>
+>>>>>>> 73050235e6be7e30f4f4be9c804bf18c9bf44158
         <a href="jeu.php" ><li class="glitch" data-text="Jeu">Jeu</li></a>
         <a href="Shop.php" ><li class="glitch" data-text="Produit dérivé">Produit dérivé</li></a>
         <a href="equipe.php" ><li class="glitch" data-text="L'équipe">L’équipe</li></a>
