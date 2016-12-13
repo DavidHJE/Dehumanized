@@ -1,15 +1,15 @@
-
 body {
 /*    overflow: hidden;*/
     background: url("../Image/stardust.png") repeat;
 }
+
 * {
     font-family: 'Poppins', serif;
     font-weight: 400;
     font-size: 2.5rem;
 }
 h2{
-    font-size: 5m;
+    font-size: 5rem;
     letter-spacing: 2rem;
 }
 
@@ -135,6 +135,7 @@ a:visited{
     overflow: hidden;
     padding: 15px;
 }
+
 #menu ul {
 
     margin: 0 auto;
@@ -145,27 +146,33 @@ a:visited{
     list-style-type: none;
     color: black;
 }
+
 #menu ul a {
     flex-grow: 1;
     align-self: center;
 }
+
 #menu ul li {
     padding: 20px 0;
     color: white;
 }
+
 #menu ul li:hover{
     background-color: white;
     color: black;
 }
+
 #menu ul li img {
     height: 64px;
 }
+
 
 .glitch {
     -webkit-transform: translate(0%, 0%);
     transform: translate(0%, 0%);
     text-decoration: none;
 }
+
 .glitch:before, .glitch:after {
     content: attr(data-text);
     position: absolute;
@@ -173,18 +180,22 @@ a:visited{
     width: 100%;
     opacity: .8;
 }
+
 .glitch:after {
     color: #f0f;
     z-index: -2;
 }
+
 .glitch:before {
     color: #0ff;
     z-index: -1;
 }
+
 .glitch:hover:before {
     -webkit-animation: glitch .3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
     animation: glitch .3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
 }
+
 .glitch:hover:after {
     -webkit-animation: glitch .3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
     animation: glitch .3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
@@ -216,6 +227,7 @@ a:visited{
         transform: translate(0);
     }
 }
+
 @keyframes glitch {
     0% {
         -webkit-transform: translate(0);
