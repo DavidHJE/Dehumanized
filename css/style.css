@@ -92,9 +92,26 @@ span.underscore {
 }
 
 @media all and (max-width: 1200px) {
-    .test p,
+    .test p span,
     .test span{
         font-size: 42px;
+    }
+    span.underscore {
+        font-size: 42px;
+    }
+}
+@media all and (max-width: 1000px) {
+    .test p,
+    .test span{
+        font-size: 30px;
+    }
+    span.underscore {
+        font-size: 30px;
+    }
+}
+@media all and (max-width: 800px) {
+    .test {
+        display: none;
     }
 }
 
@@ -137,7 +154,6 @@ a:visited{
 }
 
 #menu ul {
-
     margin: 0 auto;
     text-align: center;
     width: 1000px;
@@ -165,6 +181,27 @@ a:visited{
 #menu ul li img {
     height: 64px;
 }
+#menu #acceuil {
+    display: none;
+}
+
+@media all and (max-width: 1200px) {
+    #menu ul{
+        flex-flow: column;
+        width: 100%;
+        display: block;
+    }
+    #menu ul li {
+        padding: 5px;
+    }
+    #menu #acceuil {
+        display: inherit;
+    }
+    #menu #logo {
+        display: none;
+    }
+}
+
 
 
 .glitch {
@@ -327,7 +364,7 @@ div:hover > .overlay {
     transition: all 0.5s;
 }
 .overlay#overlay-glitch {
-    background: url("../image/glitch2.jpg") no-repeat center;
+    background: url("../Image/glitch2.jpg") no-repeat center;
     background-size: cover;
 }
 
