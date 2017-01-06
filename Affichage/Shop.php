@@ -6,43 +6,45 @@
 		  
         <div class=" col-sm-12">
             <div class="item-img">
-            	<a><span class="item-name">Bientôt disponible</span> </a>
+            	<a><span class="item-name">Sera disponible à la sortie du court métrage</span> </a>
             </div>
         </div>
 	  </div>
 </section>
+<!--
 <section class="item container">
 <h1>Nos Wallpaper</h1>
       <div class="row">
 		<div class=" col-sm-4">
-          <a href="../image/300x300.png"
+          <a href="../Image/300x300.jpg"
 			download="osef">  
             <div class="item-img">
-              <img src="../image/300x300.png" />	  
+              <img src="../Image/300x300.jpg" />	  
             </div>
-          <span class="item-name">Télécharger l'image</span>
+          <span class="item-name">Télécharger l'Image</span>
           </a>
         </div>
 		<div class=" col-sm-4">
-          <a href="../image/300x300.png"
+          <a href="../Image/300x300.jpg"
 			download="osef">  
             <div class="item-img">
-              <img src="../image/300x300.png" />	  
+              <img src="../Image/300x300.jpg" />	  
             </div>
-          <span class="item-name">Télécharger l'image</span>
+          <span class="item-name">Télécharger l'Image</span>
           </a>
         </div>
         <div class=" col-sm-4">
-          <a href="../image/300x300.png"
+          <a href="../Image/300x300.jpg"
 			download="osef">  
             <div class="item-img">
-              <img src="../image/300x300.png" />	  
+              <img src="../Image/300x300.jpg" />	  
             </div>
-          <span class="item-name">Télécharger l'image</span>
+          <span class="item-name">Télécharger l'Image</span>
           </a>
         </div>
 	  </div>
 </section>
+-->
   <section class="item container">
       
       <h1>Nos futur produits </h1>
@@ -50,22 +52,18 @@
       <div class="row">
         <div class=" col-sm-3">
           <a href="#">
-            
-            
             <div class="item-img">
-              <img src="../image/tee-shirt-blanc.png" />
-
+              <img src="../Image/tee-shirt-blanc.jpg" />
             </div>
             <span class="item-name">T-Shirt Blanc</span>
             <span class="item-price">20€</span>
           </a>
         </div>
         <div class=" col-sm-3">
-          <a href="#">
-            
+          <a href="#">            
             
             <div class="item-img">
-              <img src="../image/tee-shirt-bleu.png" />
+              <img src="../Image/tee-shirt-bleu.jpg" />
         </div>
             <span class="item-name">T-Shirt Bleu</span>
             <span class="item-price">20€</span>
@@ -76,7 +74,7 @@
             
             
             <div class="item-img">
-              <img src="../image/tee-shirt-jaune.png" />
+              <img src="../Image/tee-shirt-jaune.jpg" />
 
             </div>
             <span class="item-name">T-Shirt Jaune</span>
@@ -88,7 +86,7 @@
             
             
             <div class="item-img">
-              <img src="../image/tee-shirt.png" />
+              <img src="../Image/tee-shirt.jpg" />
             </div>
             <span class="item-name">T-Shirt Gris</span>
             <span class="item-price">20€</span>
@@ -99,7 +97,7 @@
             
             
             <div class="item-img">
-              <img src="../image/sweat.png" />
+              <img src="../Image/sweat.jpg" />
             </div>
             <span class="item-name">Sweat</span>
             <span class="item-price">30€</span>
@@ -110,7 +108,7 @@
             
             
             <div class="item-img">
-              <img src="../image/tasse.png" />
+              <img src="../Image/tasse.jpg" />
             </div>
             <span class="item-name">Tasse</span>
             <span class="item-price">5€</span>
@@ -123,7 +121,7 @@
             
             
             <div class="item-img">
-              <img src="../image/stylos.jpg" />
+              <img src="../Image/stylos.jpg" />
             </div>
             <span class="item-name">Stylos</span>
             <span class="item-price">3€</span>
@@ -134,7 +132,7 @@
             
             
             <div class="item-img">
-              <img src="../image/clef-usb.png" />
+              <img src="../Image/clef-usb.jpg" />
             </div>
             <span class="item-name">Clef Usb</span>
             <span class="item-price">7€</span>
