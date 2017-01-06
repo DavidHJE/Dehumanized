@@ -2,20 +2,20 @@
 <?php require "menu.php"; ?>
 
 <h1>L'equipe</h1>
-<div class="staff">Guillaume Andry</div>
-<div class="staff">Guillaume Lollier</div>
-<div class="staff">Maximilien Pluchard</div>
-<div class="staff">Alice Tuchszer</div>
-<div class="staff">Romain Carrette</div>
-<div class="staff">Julien Abaléa</div>
-<div class="staff">Romain Lavise</div>
-<div class="staff">David Huet</div>
-<div class="staff">Delphine Lods</div>
-<div class="staff">Benoit Duhamuel</div>
-<div class="staff">Charles Monchaux</div>
-<div class="staff">Aurélien Leva</div>
-<div class="staff">Elise Duvivier</div>
-<div class="staff">Pierre Castelain</div>
-<div class="staff">Antoine Meresse</div>
-<div class="staff">Paul Rodrigues</div>
+<div class="staff"><a href="#"><img src="../image/sheep.jpg">Guillaume Andry</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">Guillaume Lollier</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">Maximilien Pluchard</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">Alice Tuchszer</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">Romain Carrette</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">Julien Abaléa</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">Romain Lavise</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">David Huet</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">Delphine Lods</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">Benoit Duhamuel</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">Charles Monchaux</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">Aurélien Leva</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">Elise Duvivier</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">Pierre Castelain</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">Antoine Meresse</a></div><!-- 
+--><div class="staff"><a href="#"><img src="../image/sheep.jpg">Paul Rodrigues</a></div><!-- -->
 <?php require "footer.php"; ?>
