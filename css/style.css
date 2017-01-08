@@ -1,5 +1,5 @@
 body {
-/*    overflow: hidden;*/
+    /*    overflow: hidden;*/
     background: url("../Image/stardust.png") repeat;
 }
 
@@ -395,32 +395,29 @@ div:hover > .overlay {
 
 /* shop */
 
-  .item{
+.item{
     width:95%;
     padding-top:30px;
     padding-bottom:30px;
 
-  }
-  .item > .row > div{
+}
+.item > .row > div{
     padding: 2px;
-  }
+}
 
-  .item h1{
+.item h1{
     color:white;
     font-size: 5rem;
     text-align: center;
     margin-bottom: 25px;
-  }
-  
-  
-    
-  .item a{
+}    
+.item a{
     display:block;
     background:white;
     padding: 10px;
-  }
+}
 
-  .item .item-name{
+.item .item-name{
 
     text-align: center;
     display: block;
@@ -429,27 +426,39 @@ div:hover > .overlay {
     position: relative;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-    .item .item-price{
+}
+.item .item-price{
     text-align: center;
     display: block;
     text-align: center;
     font-size: 2rem;
     position: relative;
     margin-bottom: 10px;
-  }
-  
-
- .item img{
-  border : black 2px solid;
-  width: 100%;
-  transition:  transform 200ms;
-  transform: translate3d(0,0,0) scale(1.00);
-  }
-  .item img:hover {
-  transform: translate3d(0,0,0) scale(1.10);
-  z-index: 2;
 }
+
+
+.item img{
+    border : black 2px solid;
+    width: 100%;
+    transition:  transform 200ms;
+    transform: translate3d(0,0,0) scale(1.00);
+}
+.item img:hover {
+    transform: translate3d(0,0,0) scale(1.10);
+    z-index: 2;
+}
+
+.wrapper-iframe {
+    text-align: center;
+}
+@media all and (max-width: 700px) {
+    .wrapper-iframe iframe {
+        width: 100% !important; 
+        height: 500px !important;
+    }
+}
+
+
 
 /**** equipe *****/
 .staff {
@@ -459,7 +468,7 @@ div:hover > .overlay {
     color: white;
 }
 .staff .caption{
-	color: grey;
+    color: grey;
     display: block;
 }
 .staff img {
@@ -471,8 +480,8 @@ div:hover > .overlay {
 
 /********* Dossier de presse *************/
 #dossierdepress {
-	margin-left: 5%;
-	margin-right: 5%;
-	color: #8bacf5;
-	text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #8bacf5;
+    text-align: justify;
 }

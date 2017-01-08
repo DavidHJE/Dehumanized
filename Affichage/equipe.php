@@ -86,7 +86,7 @@
         <div class="col-md-3 col-sm-6 col-xs-12">
 
             <div class="staff">
-                <img src="../Image/sheep.jpg">Pierre Castelain
+                <img src="../Image/pierre.jpg">Pierre Castelain
                 <span class="caption">Ingénieur son</span>
             </div>
         </div>
